@@ -76,7 +76,7 @@ To change font size, use VKSharedUtility. There are 3 values.
     // @3 : Huge
     [VKSharedUtility setValue:@1 forKey:kVKSettingsSubtitleSizeKey];
 
-Or you can override folloing method to customize caption style.
+Or you can override following method to customize caption style.
 
     - (DTCSSStylesheet*)captionStyleSheet:(NSString*)color {
       float fontSize = 1.3f;
