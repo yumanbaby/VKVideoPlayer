@@ -101,7 +101,7 @@ static const int ddLogLevel = LOG_LEVEL_WARN;
 - (NSString*)contentAtTime:(NSInteger)timeInMilliseconds {
   NSDictionary* time = [NSDictionary dictionaryWithObjectsAndKeys:
                         @"", @"content",
-                        [NSNumber numberWithInt:timeInMilliseconds], @"start_time",
+                        [NSNumber numberWithInteger:timeInMilliseconds], @"start_time",
                         @"", @"end_time",
                         nil];
   
