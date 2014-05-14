@@ -10,7 +10,6 @@
 #import "VKVideoPlayerLayerView.h"
 #import "VKVideoPlayerTrack.h"
 #import "NSObject+VKFoundation.h"
-#import "AFHTTPRequestOperation.h"
 #import "VKVideoPlayerExternalMonitor.h"
 
 
