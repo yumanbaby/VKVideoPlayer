@@ -23,6 +23,5 @@ Pod::Spec.new do |s|
   s.dependency 'CocoaLumberjack', '~> 1.7.0'
   s.dependency 'VKFoundation', '0.1.1'
 
-  I18n.enforce_available_locales = false
 end
 
