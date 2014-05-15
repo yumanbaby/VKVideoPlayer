@@ -76,7 +76,7 @@ typedef enum {
   [self.externalMonitor deactivate];
   
   self.timeObserver = nil;
-
+  self.avPlayer = nil;
   self.captionTop = nil;
   self.captionBottom = nil;
   self.captionTopTimer = nil;
