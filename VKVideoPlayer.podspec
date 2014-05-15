@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "VKVideoPlayer"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "VKVideoPlayer is Http Live Streaming player that is able to display subtitles."
   s.homepage         = "https://github.com/viki-org/VKVideoPlayer"
   s.license          = 'Apache License, Version 2.0'
