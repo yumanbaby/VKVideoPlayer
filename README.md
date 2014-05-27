@@ -163,6 +163,13 @@ This method is called when ocurred an error.
 
 iOS 5.0 or later
 
+## Credits
+
+This project uses the following 3rd party libraries:
+
+- DTCoreText
+- CocoaLumberjack
+
 ## License
 
 VKVideoPlayer is licensed under the Apache License, Version 2.0. See the LICENSE file for more info.
