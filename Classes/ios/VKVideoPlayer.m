@@ -364,7 +364,7 @@ typedef enum {
   return self.externalMonitor.isConnected;
 }
 
-#pragma mark - Hundle Videos
+#pragma mark - Handle Videos
 - (void)loadVideoWithTrack:(id<VKVideoPlayerTrackProtocol>)track {
   self.track = track;
   self.state = VKVideoPlayerStateContentLoading;
@@ -1046,11 +1046,7 @@ typedef enum {
 }
 
 - (void)setLoading:(BOOL)loading {
-  if (loading) {
-    [self.view.activityIndicator startAnimating];
-  } else {
-    [self.view.activityIndicator stopAnimating];
-  }
+  [self.view setLoading:loading];
 }
 
 #pragma mark - Handle volume change

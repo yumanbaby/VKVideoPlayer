@@ -110,6 +110,7 @@
 - (void)setControlsHidden:(BOOL)hidden;
 - (void)setControlsEnabled:(BOOL)enabled;
 - (void)hideControlsIfNecessary;
+- (void)setLoading:(BOOL)isLoading;
 
 - (void)setPlayButtonsSelected:(BOOL)selected;
 - (void)setPlayButtonsEnabled:(BOOL)enabled;

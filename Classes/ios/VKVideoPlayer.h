@@ -44,8 +44,8 @@ typedef enum {
   VKVideoPlayerStateContentLoading,
   VKVideoPlayerStateContentPlaying,
   VKVideoPlayerStateContentPaused,
-  VKVideoPlayerStateSuspend,
-  VKVideoPlayerStateDismissed,
+  VKVideoPlayerStateSuspend,        // Player suspended for ad playback
+  VKVideoPlayerStateDismissed,      // Player dismissed when dismissing view controller
   VKVideoPlayerStateError
 } VKVideoPlayerState;
 

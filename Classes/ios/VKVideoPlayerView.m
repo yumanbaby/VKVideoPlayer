@@ -104,6 +104,8 @@
   }
   
   [self.topPortraitCloseButton addTarget:self action:@selector(doneButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+  
+//  [self layoutForOrientation:[[UIApplication sharedApplication] statusBarOrientation]];
 }
 
 - (id)initWithFrame:(CGRect)frame {
@@ -231,15 +233,66 @@
 }
 
 - (void)layoutSliderForOrientation:(UIInterfaceOrientation)interfaceOrientation {
-  if (UIInterfaceOrientationIsPortrait(interfaceOrientation)) {
-    [self.totalTimeLabel setFrameOriginX:CGRectGetMinX(self.fullscreenButton.frame) - self.totalTimeLabel.frame.size.width];
-  } else {
-    [self.totalTimeLabel setFrameOriginX:CGRectGetMinX(self.captionButton.frame) - self.totalTimeLabel.frame.size.width - PADDING];
+//  if (UIInterfaceOrientationIsPortrait(interfaceOrientation)) {
+//    [self.totalTimeLabel setFrameOriginX:CGRectGetMinX(self.fullscreenButton.frame) - self.totalTimeLabel.frame.size.width];
+//  } else {
+//    [self.totalTimeLabel setFrameOriginX:CGRectGetMinX(self.captionButton.frame) - self.totalTimeLabel.frame.size.width - PADDING];
+//  }
+  
+  CGFloat bottomControlsWidth = self.bottomControlOverlay.frame.size.width;
+  CGFloat bottomControlsHeight = self.bottomControlOverlay.frame.size.height;
+  
+  CGFloat leftOffset = 0.0f;
+  CGFloat rightOffset = bottomControlsWidth;
+  
+  // Play Button
+  if (!self.playButton.hidden) {
+    [self.playButton setFrameOriginX:leftOffset + 2];
+    [self.playButton setFrameOriginY:(bottomControlsHeight - self.playButton.frame.size.height) / 2];
+    leftOffset = CGRectGetMaxX(self.playButton.frame);
   }
-
-  [self.scrubber setFrameOriginX:self.currentTimeLabel.frame.origin.x + self.currentTimeLabel.frame.size.width + 4];
-  [self.scrubber setFrameWidth:self.totalTimeLabel.frame.origin.x - self.scrubber.frame.origin.x - 4];
-  [self.scrubber setFrameOriginY:CGRectGetHeight(self.bottomControlOverlay.frame)/2 - CGRectGetHeight(self.scrubber.frame)/2];
+  
+  // Current Time Label
+  if (!self.currentTimeLabel.hidden) {
+    [self.currentTimeLabel setFrameOriginX:MAX(leftOffset - 2, 0)];
+    [self.currentTimeLabel setFrameOriginY:(bottomControlsHeight - self.currentTimeLabel.frame.size.height)];
+    leftOffset = CGRectGetMaxX(self.currentTimeLabel.frame);
+  }
+  
+  // Full Screen Button
+  if (!self.fullscreenButton.hidden) {
+    [self.fullscreenButton setFrameOriginX:rightOffset - 4 - self.fullscreenButton.frame.size.width];
+    [self.fullscreenButton setFrameOriginY:(bottomControlsHeight - self.fullscreenButton.frame.size.height) / 2];
+    rightOffset = CGRectGetMinX(self.fullscreenButton.frame);
+  }
+  
+  // Video Quality Button
+  if (!self.videoQualityButton.hidden) {
+    [self.videoQualityButton setFrameOriginX:rightOffset - 2 - self.videoQualityButton.frame.size.width];
+    [self.videoQualityButton setFrameOriginY:(bottomControlsHeight - self.videoQualityButton.frame.size.height) / 2];
+    rightOffset = CGRectGetMinX(self.videoQualityButton.frame);
+  }
+  
+  // Captions Button
+  if (!self.captionButton.hidden) {
+    [self.captionButton setFrameOriginX:rightOffset - 4 - self.captionButton.frame.size.width];
+    [self.captionButton setFrameOriginY:(bottomControlsHeight - self.captionButton.frame.size.height) / 2];
+    rightOffset = CGRectGetMinX(self.captionButton.frame);
+  }
+  
+  // Total Time Label
+  if (!self.totalTimeLabel.hidden) {
+    [self.totalTimeLabel setFrameOriginX:rightOffset - 2 - self.totalTimeLabel.frame.size.width];
+    [self.totalTimeLabel setFrameOriginY:(bottomControlsHeight - self.captionButton.frame.size.height) / 2];
+    rightOffset = CGRectGetMinX(self.totalTimeLabel.frame);
+  }
+  
+  // Scrubber
+  if (!self.scrubber.hidden) {
+    [self.scrubber setFrameOriginX:leftOffset + 4];
+    [self.scrubber setFrameWidth:self.totalTimeLabel.frame.origin.x - self.scrubber.frame.origin.x - 4];
+    [self.scrubber setFrameOriginY:(bottomControlsHeight - self.scrubber.frame.size.height) / 2];
+  }
 }
 
 - (void)layoutSlider {
@@ -328,6 +381,14 @@
     [self setControlsHidden:YES];
   } else {
     self.controlHideCountdown--;
+  }
+}
+
+- (void)setLoading:(BOOL)isLoading {
+  if (isLoading) {
+    [self.activityIndicator startAnimating];
+  } else {
+    [self.activityIndicator stopAnimating];
   }
 }
 
