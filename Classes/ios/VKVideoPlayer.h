@@ -44,7 +44,6 @@ typedef enum {
   VKVideoPlayerStateContentLoading,
   VKVideoPlayerStateContentPlaying,
   VKVideoPlayerStateContentPaused,
-  VKVideoPlayerStateSuspend,        // Player suspended for ad playback
   VKVideoPlayerStateDismissed,      // Player dismissed when dismissing view controller
   VKVideoPlayerStateError
 } VKVideoPlayerState;
@@ -143,6 +142,7 @@ VKVideoPlayerViewDelegate
 - (void)loadVideoWithTrack:(id<VKVideoPlayerTrackProtocol>)track;
 - (void)loadVideoWithStreamURL:(NSURL*)streamURL;
 - (void)reloadCurrentVideoTrack;
+- (void)initPlayerWithTrack:(id<VKVideoPlayerTrackProtocol>)track;
 - (VKVideoPlayerView*)activePlayerView;
 
 #pragma mark - Controls

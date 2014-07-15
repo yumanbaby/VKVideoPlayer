@@ -91,18 +91,18 @@ static const int ddLogLevel = LOG_LEVEL_WARN;
   return @"Unknown Device";
 }
 
-- (void)changePlayerSteteFrom:(VKVideoPlayerState)oldState to:(VKVideoPlayerState)newState {
+- (void)changePlayerStateFrom:(VKVideoPlayerState)oldState to:(VKVideoPlayerState)newState {
   switch (newState) {
     case VKVideoPlayerStateContentLoading:
       self.externalView.messageLabel.hidden = YES;
       self.externalView.playerLayerView.hidden = YES;
       [self.externalView.activityIndicator startAnimating];
       break;
-    case VKVideoPlayerStateSuspend:
-      self.externalView.messageLabel.hidden = NO;
-      self.externalView.playerLayerView.hidden = YES;
-      [self.externalView.activityIndicator stopAnimating];
-      break;
+//    case VKVideoPlayerStateSuspend:
+//      self.externalView.messageLabel.hidden = NO;
+//      self.externalView.playerLayerView.hidden = YES;
+//      [self.externalView.activityIndicator stopAnimating];
+//      break;
     case VKVideoPlayerStateContentPlaying:
       self.externalView.messageLabel.hidden = YES;
       self.externalView.playerLayerView.hidden = NO;
