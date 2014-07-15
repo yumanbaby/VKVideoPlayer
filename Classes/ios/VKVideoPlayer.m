@@ -456,7 +456,7 @@ typedef enum {
     switch (self.state) {
       case VKVideoPlayerStateContentPaused:
         break;
-      case VKVideoPlayerStateContentLoading:{}
+      case VKVideoPlayerStateContentLoading:
       case VKVideoPlayerStateError:{
         [self pauseContent:NO completionHandler:^{
           // If should not auto start video, return
