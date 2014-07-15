@@ -922,8 +922,8 @@ typedef enum {
       case VKVideoPlayerStateSuspend:
       case VKVideoPlayerStateError:
         [self.player pause];
-        if (completionHandler) completionHandler();
         self.state = VKVideoPlayerStateContentPaused;
+        if (completionHandler) completionHandler();
         break;
       default:
         break;
