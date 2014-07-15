@@ -44,6 +44,7 @@ typedef enum {
   VKVideoPlayerStateContentLoading,
   VKVideoPlayerStateContentPlaying,
   VKVideoPlayerStateContentPaused,
+  VKVideoPlayerStateSuspend,        // Player suspended for ad playback
   VKVideoPlayerStateDismissed,      // Player dismissed when dismissing view controller
   VKVideoPlayerStateError
 } VKVideoPlayerState;
@@ -125,6 +126,7 @@ VKVideoPlayerViewDelegate
 @property (nonatomic, assign) CGRect landscapeFrame;
 @property (nonatomic, assign) BOOL forceRotate;
 
+@property (nonatomic, assign) BOOL isReadyToPlay;
 
 - (id)initWithVideoPlayerView:(VKVideoPlayerView*)videoPlayerView;
 
@@ -161,4 +163,8 @@ VKVideoPlayerViewDelegate
 
 - (void)updateCaptionView:(DTAttributedLabel*)captionView caption:(id<VKVideoPlayerCaptionProtocol>)caption playerView:(VKVideoPlayerView*)playerView;
 - (void)clearCaptionView:(DTAttributedLabel*)captionView;
+
+#pragma mark - Ad State Support
+- (BOOL)beginAdPlayback;
+- (BOOL)endAdPlayback;
 @end
