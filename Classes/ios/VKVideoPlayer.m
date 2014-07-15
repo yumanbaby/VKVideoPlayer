@@ -957,6 +957,7 @@ typedef enum {
 
 - (void)scrubbingEnd {
   _scrubbing = NO;
+  self.state = VKVideoPlayerStateContentLoading;
   float afterSeekTime = self.view.scrubber.value;
   [self scrubbingEndAtSecond:afterSeekTime userAction:YES completionHandler:^(BOOL finished) {
     if (finished) [self playContent];
