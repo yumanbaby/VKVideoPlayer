@@ -429,6 +429,9 @@ typedef enum {
     return;
   }
   
+  // Content now loading
+  self.state = VKVideoPlayerStateContentLoading;
+  
   // Get asset to create AVPlayerItem and AVPlayer
   AVURLAsset* asset = [[AVURLAsset alloc] initWithURL:streamURL options:@{ AVURLAssetPreferPreciseDurationAndTimingKey : @YES }];
   [asset loadValuesAsynchronouslyForKeys:@[kTracksKey, kPlayableKey] completionHandler:^{
@@ -442,11 +445,7 @@ typedef enum {
       NSError *error = nil;
       AVKeyValueStatus status = [asset statusOfValueForKey:kTracksKey error:&error];
       if (status == AVKeyValueStatusLoaded) {
-        /**
-         * Content is now loading
-         * Init AVPlayerItem and AVPlayer
-         */
-        self.state = VKVideoPlayerStateContentLoading;
+        // Init AVPlayerItem and AVPlayer
         self.playerItem = [AVPlayerItem playerItemWithAsset:asset];
         self.avPlayer = [self playerWithPlayerItem:self.playerItem];
         self.player = (id<VKPlayer>)self.avPlayer;
@@ -893,7 +892,7 @@ typedef enum {
         break;
       case AVPlayerItemStatusUnknown:
         DDLogVerbose(@"Trying to pause content but AVPlayerItemStatusUnknown.");
-        self.state = VKVideoPlayerStateContentLoading;
+        self.state = VKVideoPlayerStateUnknown;
         return;
         break;
       default:
@@ -908,7 +907,7 @@ typedef enum {
         break;
       case AVPlayerStatusUnknown:
         DDLogVerbose(@"Trying to pause content but AVPlayerStatusUnknown.");
-        self.state = VKVideoPlayerStateContentLoading;
+        self.state = VKVideoPlayerStateUnknown;
         return;
         break;
       default:
