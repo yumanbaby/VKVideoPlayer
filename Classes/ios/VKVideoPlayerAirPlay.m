@@ -98,7 +98,7 @@ static const int ddLogLevel = LOG_LEVEL_WARN;
       self.externalView.playerLayerView.hidden = YES;
       [self.externalView.activityIndicator startAnimating];
       break;
-    case VKVideoPlayerStateSuspend:
+    case VKVideoPlayerStateSuspended:
       self.externalView.messageLabel.hidden = NO;
       self.externalView.playerLayerView.hidden = YES;
       [self.externalView.activityIndicator stopAnimating];

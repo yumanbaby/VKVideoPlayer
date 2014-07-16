@@ -44,7 +44,7 @@ typedef enum {
   VKVideoPlayerStateContentLoading,
   VKVideoPlayerStateContentPlaying,
   VKVideoPlayerStateContentPaused,
-  VKVideoPlayerStateSuspend,        // Player suspended for ad playback
+  VKVideoPlayerStateSuspended,        // Player suspended for ad playback
   VKVideoPlayerStateDismissed,      // Player dismissed when dismissing view controller
   VKVideoPlayerStateError
 } VKVideoPlayerState;
@@ -153,6 +153,7 @@ VKVideoPlayerViewDelegate
 - (void)pauseContentWithCompletionHandler:(void (^)())completionHandler;
 - (void)pauseContent:(BOOL)isUserAction completionHandler:(void (^)())completionHandler;
 - (void)updateTrackControls;
+- (void)dismiss;
 
 #pragma mark - Captions
 - (void)clearCaptions;

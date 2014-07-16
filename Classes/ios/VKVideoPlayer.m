@@ -373,7 +373,7 @@ typedef enum {
   
   switch (self.state) {
     case VKVideoPlayerStateUnknown:
-    case VKVideoPlayerStateSuspend:
+    case VKVideoPlayerStateSuspended:
     case VKVideoPlayerStateError:
     case VKVideoPlayerStateContentPaused:
     case VKVideoPlayerStateContentLoading:
@@ -572,7 +572,7 @@ typedef enum {
         [self pauseContent:NO completionHandler:completionHandler];
         break;
       case VKVideoPlayerStateDismissed:
-      case VKVideoPlayerStateSuspend:
+      case VKVideoPlayerStateSuspended:
         break;
     }
   });
@@ -730,7 +730,7 @@ typedef enum {
       [self pauseContent];
     case VKVideoPlayerStateContentLoading:
     case VKVideoPlayerStateContentPaused:
-      self.state = VKVideoPlayerStateSuspend;
+      self.state = VKVideoPlayerStateSuspended;
       return YES;
     default:
       return NO;
@@ -738,7 +738,7 @@ typedef enum {
 }
 
 - (BOOL)endAdPlayback {
-  if (self.state == VKVideoPlayerStateSuspend) {
+  if (self.state == VKVideoPlayerStateSuspended) {
     [self pauseContent];
     [self playContent];
     return YES;
@@ -762,7 +762,7 @@ typedef enum {
     case VKVideoPlayerStateContentPlaying:
       return @"ContentPlaying";
       break;
-    case VKVideoPlayerStateSuspend:
+    case VKVideoPlayerStateSuspended:
       return @"Player Stay";
       break;
     case VKVideoPlayerStateDismissed:
@@ -838,7 +838,7 @@ typedef enum {
         self.view.messageLabel.hidden = YES;
         self.view.externalDeviceView.hidden = ![self isPlayingOnExternalDevice];
         break;
-      case VKVideoPlayerStateSuspend:
+      case VKVideoPlayerStateSuspended:
         break;
       case VKVideoPlayerStateError:{
         self.view.externalDeviceView.hidden = YES;
@@ -918,7 +918,7 @@ typedef enum {
       case VKVideoPlayerStateContentLoading:
       case VKVideoPlayerStateContentPlaying:
       case VKVideoPlayerStateContentPaused:
-      case VKVideoPlayerStateSuspend:
+      case VKVideoPlayerStateSuspended:
       case VKVideoPlayerStateError:
         [self.player pause];
         self.state = VKVideoPlayerStateContentPaused;
@@ -944,6 +944,9 @@ typedef enum {
   });
 }
 
+- (void)dismiss {
+  self.state = VKVideoPlayerStateDismissed;
+}
 
 #pragma mark - VKScrubberDelegate
 
