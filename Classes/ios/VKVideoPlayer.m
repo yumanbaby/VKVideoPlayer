@@ -99,7 +99,6 @@ typedef enum {
   self.scrubbing = NO;
   self.beforeSeek = 0.0;
   self.previousPlaybackTime = 0;
-//  self.supportedOrientations = [[UIApplication sharedApplication] supportedInterfaceOrientationsForWindow:[[UIApplication sharedApplication] keyWindow]];
   self.supportedOrientations = VKSharedUtility.isPad ? UIInterfaceOrientationMaskAll : UIInterfaceOrientationMaskAllButUpsideDown;
 
   self.forceRotate = NO;
@@ -1014,12 +1013,18 @@ typedef enum {
 
 - (void)playButtonPressed {
   [self playContent];
+  if ([self.delegate respondsToSelector:@selector(videoPlayer:didControlByEvent:)]) {
+    [self.delegate videoPlayer:self didControlByEvent:VKVideoPlayerControlEventTapPlay];
+  }
 }
 
 - (void)pauseButtonPressed {
   switch (self.state) {
     case VKVideoPlayerStateContentPlaying:
       [self pauseContent:YES completionHandler:nil];
+      if ([self.delegate respondsToSelector:@selector(videoPlayer:didControlByEvent:)]) {
+        [self.delegate videoPlayer:self didControlByEvent:VKVideoPLayerControlEventTapPause];
+      }
       break;
     default:
       break;
