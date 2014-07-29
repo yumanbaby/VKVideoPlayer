@@ -22,7 +22,7 @@
   self.player.view.frame = self.view.bounds;
   [self.view addSubview:self.player.view];
   
-  [self addDemoControl];
+  //[self addDemoControl];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
