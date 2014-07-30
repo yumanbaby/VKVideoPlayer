@@ -67,6 +67,25 @@
 		1BB9D35918FBFEF300568286 /* testCaptionTop.srt in Resources */ = {isa = PBXBuildFile; fileRef = 1BB9D35818FBFEF300568286 /* testCaptionTop.srt */; };
 		1BB9D35A18FBFEF400568286 /* testCaptionTop.srt in Resources */ = {isa = PBXBuildFile; fileRef = 1BB9D35818FBFEF300568286 /* testCaptionTop.srt */; };
 		1BF1CCDB1903A8660006FBC8 /* DemoRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1CCDA1903A8660006FBC8 /* DemoRootViewController.m */; };
+		7FAD312B198779B90044CF82 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAD312A198779B90044CF82 /* QuartzCore.framework */; };
+		7FAD312D198779C00044CF82 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FAD312C198779C00044CF82 /* Accelerate.framework */; };
+		7FAD319F19878A040044CF82 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319019878A040044CF82 /* burger.png */; };
+		7FAD31A019878A040044CF82 /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319119878A040044CF82 /* burger@2x.png */; };
+		7FAD31A119878A040044CF82 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319219878A040044CF82 /* Default-568h@2x.png */; };
+		7FAD31A219878A040044CF82 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319319878A040044CF82 /* Default.png */; };
+		7FAD31A319878A040044CF82 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319419878A040044CF82 /* Default@2x.png */; };
+		7FAD31A419878A040044CF82 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319519878A040044CF82 /* gear.png */; };
+		7FAD31A519878A040044CF82 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319619878A040044CF82 /* gear@2x.png */; };
+		7FAD31A619878A040044CF82 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319719878A040044CF82 /* globe.png */; };
+		7FAD31A719878A040044CF82 /* globe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319819878A040044CF82 /* globe@2x.png */; };
+		7FAD31A819878A040044CF82 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319919878A040044CF82 /* profile.png */; };
+		7FAD31A919878A050044CF82 /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319A19878A040044CF82 /* profile@2x.png */; };
+		7FAD31AA19878A050044CF82 /* Profile_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319B19878A040044CF82 /* Profile_image.png */; };
+		7FAD31AB19878A050044CF82 /* Profile_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319C19878A040044CF82 /* Profile_image@2x.png */; };
+		7FAD31AC19878A050044CF82 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319D19878A040044CF82 /* star.png */; };
+		7FAD31AD19878A050044CF82 /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD319E19878A040044CF82 /* star@2x.png */; };
+		7FAD31B119878A330044CF82 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FAD31AF19878A330044CF82 /* MainViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		7FAD31B219878A330044CF82 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FAD31B019878A330044CF82 /* MainViewController.xib */; };
 		D1C3D9DF54424BFB8D408C64 /* libPods-VKVideoPlayerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 150BEB98AFEA4FF199BA4AA6 /* libPods-VKVideoPlayerTests.a */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +175,26 @@
 		1BF1CCD91903A8660006FBC8 /* DemoRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRootViewController.h; sourceTree = "<group>"; };
 		1BF1CCDA1903A8660006FBC8 /* DemoRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRootViewController.m; sourceTree = "<group>"; };
 		348E1BD9B136464CB42DDFDD /* Pods-VKVideoPlayerTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKVideoPlayerTests.xcconfig"; path = "Pods/Pods-VKVideoPlayerTests.xcconfig"; sourceTree = "<group>"; };
+		7FAD312A198779B90044CF82 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7FAD312C198779C00044CF82 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7FAD319019878A040044CF82 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
+		7FAD319119878A040044CF82 /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
+		7FAD319219878A040044CF82 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7FAD319319878A040044CF82 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7FAD319419878A040044CF82 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7FAD319519878A040044CF82 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		7FAD319619878A040044CF82 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		7FAD319719878A040044CF82 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		7FAD319819878A040044CF82 /* globe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@2x.png"; sourceTree = "<group>"; };
+		7FAD319919878A040044CF82 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		7FAD319A19878A040044CF82 /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		7FAD319B19878A040044CF82 /* Profile_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile_image.png; sourceTree = "<group>"; };
+		7FAD319C19878A040044CF82 /* Profile_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile_image@2x.png"; sourceTree = "<group>"; };
+		7FAD319D19878A040044CF82 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		7FAD319E19878A040044CF82 /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
+		7FAD31AE19878A330044CF82 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		7FAD31AF19878A330044CF82 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		7FAD31B019878A330044CF82 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		D92486162E1943FAB9D33A36 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +203,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FAD312D198779C00044CF82 /* Accelerate.framework in Frameworks */,
+				7FAD312B198779B90044CF82 /* QuartzCore.framework in Frameworks */,
 				1BB6ADBD18EE626A00767FA3 /* CoreGraphics.framework in Frameworks */,
 				1BB6ADBF18EE626A00767FA3 /* UIKit.framework in Frameworks */,
 				1BB6ADBB18EE626A00767FA3 /* Foundation.framework in Frameworks */,
@@ -251,6 +292,8 @@
 		1BB6ADB918EE626A00767FA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FAD312C198779C00044CF82 /* Accelerate.framework */,
+				7FAD312A198779B90044CF82 /* QuartzCore.framework */,
 				1BB6ADBA18EE626A00767FA3 /* Foundation.framework */,
 				1BB6ADBC18EE626A00767FA3 /* CoreGraphics.framework */,
 				1BB6ADBE18EE626A00767FA3 /* UIKit.framework */,
@@ -270,8 +313,9 @@
 				1BF1CCDA1903A8660006FBC8 /* DemoRootViewController.m */,
 				1BA61F9518FCCB6D000DDB94 /* DemoVideoPlayerViewController.h */,
 				1BA61F9618FCCB6D000DDB94 /* DemoVideoPlayerViewController.m */,
-				1B53AC3B1916732200E1B484 /* DemoHTTPStreamingServer.h */,
-				1B53AC3C1916732200E1B484 /* DemoHTTPStreamingServer.m */,
+				7FAD31AE19878A330044CF82 /* MainViewController.h */,
+				7FAD31AF19878A330044CF82 /* MainViewController.m */,
+				7FAD31B019878A330044CF82 /* MainViewController.xib */,
 				1BB6ADCC18EE626A00767FA3 /* Images.xcassets */,
 				1BB6ADC118EE626A00767FA3 /* Supporting Files */,
 			);
@@ -282,6 +326,8 @@
 		1BB6ADC118EE626A00767FA3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1B53AC3B1916732200E1B484 /* DemoHTTPStreamingServer.h */,
+				1B53AC3C1916732200E1B484 /* DemoHTTPStreamingServer.m */,
 				1BB6ADC218EE626A00767FA3 /* VKVideoPlayer-Info.plist */,
 				1BB6ADC318EE626A00767FA3 /* InfoPlist.strings */,
 				1BB6ADC618EE626A00767FA3 /* main.m */,
@@ -336,6 +382,21 @@
 		1BB6ADF618EE66CD00767FA3 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7FAD319019878A040044CF82 /* burger.png */,
+				7FAD319119878A040044CF82 /* burger@2x.png */,
+				7FAD319219878A040044CF82 /* Default-568h@2x.png */,
+				7FAD319319878A040044CF82 /* Default.png */,
+				7FAD319419878A040044CF82 /* Default@2x.png */,
+				7FAD319519878A040044CF82 /* gear.png */,
+				7FAD319619878A040044CF82 /* gear@2x.png */,
+				7FAD319719878A040044CF82 /* globe.png */,
+				7FAD319819878A040044CF82 /* globe@2x.png */,
+				7FAD319919878A040044CF82 /* profile.png */,
+				7FAD319A19878A040044CF82 /* profile@2x.png */,
+				7FAD319B19878A040044CF82 /* Profile_image.png */,
+				7FAD319C19878A040044CF82 /* Profile_image@2x.png */,
+				7FAD319D19878A040044CF82 /* star.png */,
+				7FAD319E19878A040044CF82 /* star@2x.png */,
 				1BA61FB018FD231C000DDB94 /* VKVideoPlayer_close.png */,
 				1BA61FB118FD231C000DDB94 /* VKVideoPlayer_close@2x.png */,
 				1BA61FB218FD231D000DDB94 /* VKVideoPlayer_cross.png */,
@@ -480,26 +541,40 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BA61FC618FD231D000DDB94 /* VKVideoPlayer_cross.png in Resources */,
+				7FAD319F19878A040044CF82 /* burger.png in Resources */,
+				7FAD31A419878A040044CF82 /* gear.png in Resources */,
 				1BB6ADC518EE626A00767FA3 /* InfoPlist.strings in Resources */,
 				1BA61FCF18FD231D000DDB94 /* VKVideoPlayer_play_big@2x.png in Resources */,
 				1BA61FD418FD231D000DDB94 /* VKVideoPlayer_zoom_in.png in Resources */,
+				7FAD31AD19878A050044CF82 /* star@2x.png in Resources */,
 				1BA61FC918FD231D000DDB94 /* VKVideoPlayer_next@2x.png in Resources */,
 				1BB9D35218FA4A2B00568286 /* VKVideoPlayerViewController~iphone.xib in Resources */,
+				7FAD31A219878A040044CF82 /* Default.png in Resources */,
+				7FAD31AC19878A050044CF82 /* star.png in Resources */,
 				1BB6ADF118EE66B000767FA3 /* VKVideoPlayerView.xib in Resources */,
 				1BA61FCA18FD231D000DDB94 /* VKVideoPlayer_pause_big.png in Resources */,
+				7FAD31A919878A050044CF82 /* profile@2x.png in Resources */,
 				1BA61FD518FD231D000DDB94 /* VKVideoPlayer_zoom_in@2x.png in Resources */,
 				1BA61FC818FD231D000DDB94 /* VKVideoPlayer_next.png in Resources */,
+				7FAD31A319878A040044CF82 /* Default@2x.png in Resources */,
 				1BA61FC518FD231D000DDB94 /* VKVideoPlayer_close@2x.png in Resources */,
 				1B2060311904257500E11467 /* Japanese.srt in Resources */,
 				1BA61FCB18FD231D000DDB94 /* VKVideoPlayer_pause_big@2x.png in Resources */,
 				1BA61FCD18FD231D000DDB94 /* VKVideoPlayer_pause@2x.png in Resources */,
 				1BA61FD018FD231D000DDB94 /* VKVideoPlayer_play.png in Resources */,
+				7FAD31B219878A330044CF82 /* MainViewController.xib in Resources */,
+				7FAD31A619878A040044CF82 /* globe.png in Resources */,
 				1B53AC3A19166FE700E1B484 /* web in Resources */,
+				7FAD31AB19878A050044CF82 /* Profile_image@2x.png in Resources */,
+				7FAD31A019878A040044CF82 /* burger@2x.png in Resources */,
 				1BB9D35918FBFEF300568286 /* testCaptionTop.srt in Resources */,
+				7FAD31A819878A040044CF82 /* profile.png in Resources */,
 				1BA61FC418FD231D000DDB94 /* VKVideoPlayer_close.png in Resources */,
 				1BB9D35118FA4A2B00568286 /* VKVideoPlayerViewController~ipad.xib in Resources */,
 				1B2060321904257700E11467 /* English.srt in Resources */,
 				1BA61FCC18FD231D000DDB94 /* VKVideoPlayer_pause.png in Resources */,
+				7FAD31A719878A040044CF82 /* globe@2x.png in Resources */,
+				7FAD31A119878A040044CF82 /* Default-568h@2x.png in Resources */,
 				1BA61FC718FD231D000DDB94 /* VKVideoPlayer_cross@2x.png in Resources */,
 				1BA61FD118FD231D000DDB94 /* VKVideoPlayer_play@2x.png in Resources */,
 				1BA61FD218FD231D000DDB94 /* VKVideoPlayer_rewind.png in Resources */,
@@ -508,7 +583,9 @@
 				1BA61FD618FD231D000DDB94 /* VKVideoPlayer_zoom_out.png in Resources */,
 				1BA61FCE18FD231D000DDB94 /* VKVideoPlayer_play_big.png in Resources */,
 				1BA61FD718FD231D000DDB94 /* VKVideoPlayer_zoom_out@2x.png in Resources */,
+				7FAD31AA19878A050044CF82 /* Profile_image.png in Resources */,
 				1BB9D35718FBE64E00568286 /* testCaptionBottom.srt in Resources */,
+				7FAD31A519878A040044CF82 /* gear@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +682,7 @@
 				1B1848CC18F3D7B70020F2EE /* VKVideoPlayerCaption.m in Sources */,
 				1B53AC3D1916732200E1B484 /* DemoHTTPStreamingServer.m in Sources */,
 				1BF1CCDB1903A8660006FBC8 /* DemoRootViewController.m in Sources */,
+				7FAD31B119878A330044CF82 /* MainViewController.m in Sources */,
 				1BB6ADF218EE66B000767FA3 /* VKVideoPlayerViewController.m in Sources */,
 				1BB6ADF318EE66B000767FA3 /* VKVideoPlayerView.m in Sources */,
 				1BA61F9718FCCB6D000DDB94 /* DemoVideoPlayerViewController.m in Sources */,
@@ -669,6 +747,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Evan WONG (5KKM59V99Z)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -710,6 +789,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Evan WONG (5KKM59V99Z)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -735,6 +815,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKVideoPlayer/VKVideoPlayer-Prefix.pch";
 				INFOPLIST_FILE = "VKVideoPlayer/VKVideoPlayer-Info.plist";
@@ -752,6 +833,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKVideoPlayer/VKVideoPlayer-Prefix.pch";
 				INFOPLIST_FILE = "VKVideoPlayer/VKVideoPlayer-Info.plist";
